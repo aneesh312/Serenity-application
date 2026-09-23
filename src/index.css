@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Playpen+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Lora", "Playfair Display", Georgia, serif;
+  --font-sans: "Playpen Sans", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #F4ECDD;
+  color: #2C2018;
+}
+
+/* Washi tape styling */
+.washi-tape {
+  position: absolute;
+  top: -6px;
+  left: 12px;
+  width: 50px;
+  height: 16px;
+  background-color: rgba(211, 162, 154, 0.55);
+  transform: rotate(-3deg);
+  border-left: 2px dashed rgba(44, 32, 24, 0.15);
+  border-right: 2px dashed rgba(44, 32, 24, 0.15);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.washi-tape-sage {
+  background-color: rgba(148, 164, 122, 0.55);
+}
+
+.washi-tape-terracotta {
+  background-color: rgba(198, 124, 88, 0.55);
+}
